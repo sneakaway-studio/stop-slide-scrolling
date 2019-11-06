@@ -1,0 +1,13 @@
+{
+    "indent": 1,
+    "strict": "global",
+    "unused": false,
+    "node": true,
+    "undef": true,
+    "validthis": true,
+    "esversion": 8,
+    "globals": {
+        "window": true,
+        "document": false
+    }
+}
