@@ -15,5 +15,5 @@ Owen Mundy, [sneakaway.studio](https://sneakaway.studio)
 
 ### License
 
-[MIT](LICENSE.md)
+[MIT](LICENSE)
 
