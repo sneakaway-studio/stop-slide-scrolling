@@ -46,3 +46,4 @@ Owen Mundy, [sneakaway.studio](https://sneakaway.studio)
 
 Version 0.1.3
 - Replace depreated [`mousewheel`](https://developer.mozilla.org/en-US/docs/Web/API/Element/mousewheel_event) with standard [`wheel`](https://developer.mozilla.org/en-US/docs/Web/API/Element/wheel_event) event.
+- Added support for a modifier key
