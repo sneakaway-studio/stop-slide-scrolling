@@ -1,19 +1,48 @@
 <img src="extension/assets/img/icon128.png">
 
 # stop-slide-scrolling
+
 Removes annoying accidental slide scrolling behavior in Google Drive Presentations
 
-### Credits
+
+## Frequently Asked Questions
+
+
+### How do I install?
+
+1. Download from the [Chrome Web Store](https://chrome.google.com/webstore/detail/stop-slide-scrolling-in-g/cmpmjbfhpecollipohbphhgbohleeeon?hl=en)
+2. After installing, refresh the browser tab for each Google Presentation you already have open.
+
+
+### How do I turn it on or off?
+
+1. In Chrome, click Window > Extensions
+2. Use the on / off toggle for this extension
+
+
+### Is there a version for ______?
+
+This extension only works in Chromium browsers (including Chrome, Brave, Opera, and many others). To see if you can use it with your browser, try to install it from the [Chrome Web Store](https://chrome.google.com/webstore/detail/stop-slide-scrolling-in-g/cmpmjbfhpecollipohbphhgbohleeeon?hl=en).
+
+
+
+
+## Privacy Policy
+
+This extension does not collect user data.
+
+
+## Credits
 
 Owen Mundy, [sneakaway.studio](https://sneakaway.studio)
 
-### Installation
 
-1. Download from the [Chrome Web Store](https://chrome.google.com/webstore/detail/stop-slide-scrolling-in-g/cmpmjbfhpecollipohbphhgbohleeeon?hl=en)
-2. After you install the extension, refresh the browser tab for each Google Presentation you already have open
-
-
-### License
+## License
 
 [MIT](LICENSE)
 
+
+## Changelog
+
+Version 0.1.3
+- Replace depreated [`mousewheel`](https://developer.mozilla.org/en-US/docs/Web/API/Element/mousewheel_event) with standard [`wheel`](https://developer.mozilla.org/en-US/docs/Web/API/Element/wheel_event) event.

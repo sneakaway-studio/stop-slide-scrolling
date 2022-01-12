@@ -1,13 +1,17 @@
 {
-    "indent": 1,
-    "strict": "global",
-    "unused": false,
-    "node": true,
-    "undef": true,
-    "validthis": true,
     "esversion": 8,
+    "strict": "implied",
+    "devel": true,
+    "browser": true,
+    "node": true,
+    "indent": 1,
+    "undef": true,
+    "unused": false,
     "globals": {
+        "$": false,
+        "chrome": false,
         "window": true,
         "document": false
-    }
+    },
+    "-W117": true
 }
