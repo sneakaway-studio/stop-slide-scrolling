@@ -14,6 +14,20 @@ Removes annoying accidental slide scrolling behavior in Google Drive Presentatio
 2. After installing, refresh the browser tab for each Google Presentation you already have open.
 
 
+### Is this safe?
+
+Yes. The extension does not save any data.
+
+
+### What permissions does this use?
+
+This fixes the scrolling problem that users experience with Apple's Magic Mouse on several Google sites:
+
+- calendar.google.com
+- drive.google.com
+- docs.google.com
+
+
 ### How do I turn it on or off?
 
 1. In Chrome, click Window > Extensions
@@ -23,6 +37,9 @@ Removes annoying accidental slide scrolling behavior in Google Drive Presentatio
 ### Is there a version for ______?
 
 This extension only works in Chromium browsers (including Chrome, Brave, Opera, and many others). To see if you can use it with your browser, try to install it from the [Chrome Web Store](https://chrome.google.com/webstore/detail/stop-slide-scrolling-in-g/cmpmjbfhpecollipohbphhgbohleeeon?hl=en).
+
+
+
 
 
 
