@@ -23,9 +23,9 @@ Yes. The extension does not save any data.
 
 This fixes the scrolling problem that users experience with Apple's Magic Mouse on several Google sites:
 
-- calendar.google.com
-- drive.google.com
-- docs.google.com
+- https://docs.google.com/presentation/*
+- https://docs.google.com/drawings/*
+- https://calendar.google.com/*
 
 
 ### How do I turn it on or off?
