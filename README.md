@@ -71,7 +71,8 @@ Owen Mundy / [sneakaway.studio](https://sneakaway.studio)
 ## Changelog
 
 Version 0.1.5
-- Update to Manifest 3, background to service worker 
+- Update to Manifest 3, background to service worker
+- Manifest 2 version preserved in branch, `main` is now m3
 
 Version 0.1.4
 - Adds more sites to manifest (drive and calendar)
