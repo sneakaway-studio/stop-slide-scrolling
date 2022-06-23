@@ -1,45 +1,73 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-<meta charset="UTF-8">
-<style>
-.heading { font-weight: bold; margin-top: 16px; margin-bottom: 8px; padding-bottom: 5px; border-bottom: 1px solid #ccc; }
-</style>
+	<meta charset="UTF-8">
+	<style>
+		.row {
+			margin-top: 14px;
+			margin-bottom: 8px;
+		}
+
+		.heading {
+			font-weight: bold;
+			margin-top: 0;
+			padding-top: 2px;
+			margin-bottom: 8px;
+			border-bottom: 1px solid #ccc;
+			padding-bottom: 6px;
+		}
+
+		#responseMsg {
+			width: 100%;
+			height: 16px;
+			margin: 3px 2px;
+			color: #aaa;
+		}
+	</style>
 </head>
+
 <body>
 
 
-<div style="width:220px;">
+	<div style="width:220px;">
+
+		<div class="row">
+			<div class="heading">Stop Slide Scrolling</div>
+			by <a href="https://sneakaway.studio" target="_blank">sneakaway.studio</a>
+		</div>
 
 
-<div class="heading">Stop Slide Scrolling</div>
-by <a href="https://sneakaway.studio" target="_blank">sneakaway.studio</a>
+		<div class="row">
+			<div class="heading">Instructions</div>
+			Install extension, then refresh pages with Google Presentations. </p>
+
+			<p>
+				See <a href="https://github.com/sneakaway-studio/stop-slide-scrolling#faq" target="_blank">Frequently Asked Questions</a> for more information.
+			</p>
+		</div>
 
 
-<div class="heading">Instructions</div>
-Install extension, then refresh pages with Google Presentations. </p>
+		<div class="row">
+			<div class="heading">Settings</div>
 
-<p>
-    See <a href="https://github.com/sneakaway-studio/stop-slide-scrolling" target="_blank">Frequently Asked Questions</a> for more information.
-</p>
-
-
-<div class="heading">Settings</div>
-
-
-Use a modifier key: <select name="modifierKey" id="modifierKey">
-    <option value="None">None</option>
-    <option value="Shift">Shift</option>
-    <option value="Alt">Alt</option>
-    <option value="Command">Command</option>
-</select><br>
-<small>^ Refresh page(s) to take effect</small>
+			Use a modifier key: <select name="modifierKey" id="modifierKey">
+				<option value="None">None</option>
+				<option value="Shift">Shift</option>
+				<option value="Alt">Alt</option>
+				<option value="Command">Command</option>
+			</select><br>
+			<small>^ Refresh presentations to take effect</small>
 
 
-<!-- <textarea id="responseField"></textarea> -->
+			<!-- <textarea id="responseMsgTest" style="width: 210px; height: 100px"></textarea> -->
+			<div id="responseMsg"></div>
+		</div>
 
-</div>
 
-<script src="./popup.js"></script>
+	</div>
+
+	<script src="./popup.js"></script>
 </body>
+
 </html>

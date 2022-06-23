@@ -2,16 +2,25 @@
 
 # stop-slide-scrolling
 
-Removes annoying accidental slide scrolling behavior in Google Drive Presentations
+Removes annoying accidental slide scrolling behavior in Google Drive Presentations.
 
 
-## Frequently Asked Questions
+## FAQ
 
 
 ### How do I install?
 
 1. Download from the [Chrome Web Store](https://chrome.google.com/webstore/detail/stop-slide-scrolling-in-g/cmpmjbfhpecollipohbphhgbohleeeon?hl=en)
 2. After installing, refresh the browser tab for each Google Presentation you already have open.
+
+
+
+### How do I test it?
+
+1. Install the extension
+1. Go to this [test presentation](https://docs.google.com/presentation/d/1OuEYcbP3Y2i8wl77RORIhZhJiV2jIhi9edBk3sHiGQM/edit#slide=id.p) (make sure to reload any presentations after you install the extension)
+1. Test it with the modifier keys on or off
+
 
 
 ### Is this safe?
@@ -51,7 +60,7 @@ This extension does not collect user data.
 
 ## Credits
 
-Owen Mundy, [sneakaway.studio](https://sneakaway.studio)
+Owen Mundy / [sneakaway.studio](https://sneakaway.studio)
 
 
 ## License
@@ -60,6 +69,13 @@ Owen Mundy, [sneakaway.studio](https://sneakaway.studio)
 
 
 ## Changelog
+
+Version 0.1.5
+- Update to Manifest 3, background to service worker 
+
+Version 0.1.4
+- Adds more sites to manifest (drive and calendar)
+- Improve wheel action
 
 Version 0.1.3
 - Replace depreated [`mousewheel`](https://developer.mozilla.org/en-US/docs/Web/API/Element/mousewheel_event) with standard [`wheel`](https://developer.mozilla.org/en-US/docs/Web/API/Element/wheel_event) event.
