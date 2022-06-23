@@ -1,42 +1,48 @@
 {
-    "manifest_version": 2,
-    "name": "Stop Slide Scrolling in Google Presentation",
-    "version": "0.1.4",
-    "author": "Owen Mundy",
-    "homepage_url": "https://github.com/sneakaway-studio/stop-slide-scrolling",
-    "description": "Removes annoying accidental slide scrolling behavior in Google Drive Presentations, Drawings, Calendar, etc.",
-    "icons": {
-        "16": "assets/img/icon16.png",
-        "48": "assets/img/icon48.png",
-        "128": "assets/img/icon128.png"
-    },
-    "browser_action": {
-        "default_icon": {
-            "16": "assets/img/icon16.png",
-            "48": "assets/img/icon48.png"
-        },
-        "default_title": "Stop Slide Scrolling in Google Presentation",
-        "default_popup": "pages/popup.html"
-    },
-    "background": {
-		"scripts": [
-			"assets/js/background.js"
-		]
-	},
-    "content_scripts": [{
-        "matches": [
-            "https://docs.google.com/presentation/*",
-            "https://docs.google.com/drawings/*",
-            "https://calendar.google.com/*"
-        ],
-        "js": ["assets/js/content.js"],
-        "run_at": "document_end"
-    }],
+	"manifest_version": 3,
+	"name": "Stop Slide Scrolling in Google Presentation",
+	"version": "0.1.5",
+	"author": "Owen Mundy",
+	"homepage_url": "https://github.com/sneakaway-studio/stop-slide-scrolling",
+	"description": "Removes annoying accidental slide scrolling behavior in Google Drive Presentations, Drawings, Calendar, etc.",
 
-    "permissions": [
+	"icons": {
+		"16": "assets/img/icon16.png",
+		"48": "assets/img/icon48.png",
+		"128": "assets/img/icon128.png"
+	},
+
+	"action": {
+		"default_icon": {
+			"16": "assets/img/icon16.png",
+			"48": "assets/img/icon48.png"
+		},
+		"default_title": "Stop Slide Scrolling in Google Presentation",
+		"default_popup": "pages/popup.html"
+	},
+
+	"background": {
+		"service_worker": "assets/js/background.js"
+	},
+
+	"content_scripts": [{
+		"matches": [
+			"https://docs.google.com/presentation/*",
+			"https://docs.google.com/drawings/*",
+			"https://calendar.google.com/*"
+		],
+		"js": ["assets/js/content.js"],
+		"run_at": "document_end"
+	}],
+
+	"permissions": [
 		"storage"
-    ],
-    "offline_enabled": true,
-	"content_security_policy": "script-src 'self'; object-src 'self';"
+	],
+
+	"offline_enabled": true,
+
+	"content_security_policy": {
+		"extension_pages": "script-src 'self'; object-src 'self'"
+	}
 
 }
