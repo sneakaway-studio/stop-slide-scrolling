@@ -9,7 +9,9 @@ chrome.runtime.onInstalled.addListener((details) => {
 	console.log("onInstalled details =", details);
 });
 
-
+/**
+ *	Get and Set chrome.storage.local
+ */
 const getStorageData = key =>
 	new Promise((resolve, reject) =>
 		chrome.storage.sync.get(key, result => {
@@ -19,7 +21,6 @@ const getStorageData = key =>
 			else resolve(result);
 		})
 	);
-
 const setStorageData = data =>
 	new Promise((resolve, reject) =>
 		chrome.storage.sync.set(data, () => {
